@@ -18,7 +18,7 @@
 	h1 {font-size:6em;text-align: center; }
 	h2 {font-size:3em;text-align: center;}
 	h3 {font-size:2em;text-align: left;}
-	.font24{font-size:24px} /*Para aplicar a un span por ejemplo*/
+	.font24{font-size:20px} /*Para aplicar a un span por ejemplo*/
 	img {	
 	    max-width: 100%; /*Ancho libre permitiendo al navegador calcularla en base o otros paramentros 
 		sin sobrepasar en ancho el tamaño de la caja*/
@@ -142,7 +142,7 @@
 
 		<div class="aparte"></div>
 		<div class="aparte"></div>	
-		
+
 		<div class="bloque">
 			<div class="contenedorPorTercio">
 				<img src="./imagenes/tangoMemoria01.jpeg" />
