@@ -26,7 +26,7 @@
 	}
 
 
-	div.aparte{clear:both;height:18px;/*background-color:blue*/}
+	div.aparte{clear:both;height:25px;background-color:white}
 
 	div.enlace{clear:both;height:20px;}
 	div.enlace a {font-size:2em}
@@ -48,6 +48,9 @@
 
 	<div class="contenedor1">
 		<div class="aparte"></div>
+		<div class="aparte"></div>
+		<div class="aparte"></div>
+		<div class="aparte"></div>
 		<h2>Aprendé a bailar en serio</span></h2>
 		
 
@@ -56,8 +59,8 @@
 
 		<hr />
 
-
-
+		<div class="aparte"></div>
+		<div class="aparte"></div>
 		<div class="aparte"></div>
 		<div class="aparte"></div>
 		<h2>Aprendé <span class="font24">a dominar tu cuerpo,<br/> a escuchar la música, 
@@ -67,13 +70,13 @@
 		
 		<div class="bloque">
 			<div class="contenedorPorTercio">
-				<img src="./imagenes/baileTango03jpeg.jpeg" />
+				<img src="./imagenes/unico01.png" />
 			</div>
 			<div class="contenedorPorTercio">
-				<img src="./imagenes/paso02.jpeg" />
+				<img src="./imagenes/unico02.png" />
 			</div>
 			<div class="contenedorPorTercio">
-				<img src="./imagenes/post01.jpg" />
+				<img src="./imagenes/unico04.png" />
 			</div>
 		</div>
 
@@ -93,13 +96,13 @@
 
 		<div class="bloque">
 			<div class="contenedorPorTercio">
-				<img src="./imagenes/post02.jpg" />
+				<img src="./imagenes/tangoCaminata01.jpg" />
 			</div>
 			<div class="contenedorPorTercio">
 				<img src="./imagenes/parejaTango1.jpeg" />
 			</div>
 			<div class="contenedorPorTercio">
-				<img src="./imagenes/post04.jpeg" />
+				<img src="./imagenes/tangoCaminata02.png" />
 			</div>
 		</div>
 
@@ -108,11 +111,14 @@
 		<div class="aparte"></div>
 		<div class="aparte"></div>
 
-		<h2>Aprendé <span class="font24"> a marcar un abrazo firme <br/>y a la vez flexible.</span></h2>
+		<h2>Aprendé <span class="font24"> a marcar un abrazo firme <br/>y a la vez flexible,<br/>
+		</span></h2>
 
 		<div class="aparte"></div>
 		<div class="aparte"></div>
 		
+		
+
 		
 		<div class="bloque">
 			<div class="contenedorPorTercio">
@@ -122,7 +128,7 @@
 				<img src="./imagenes/unico04.png" />
 			</div>
 			<div class="contenedorPorTercio">
-				<img src="./imagenes/abrazo03.jpeg" />
+				<img src="./imagenes/tangoAbrazo02.png" />
 			</div>
 		</div>
 
@@ -131,8 +137,32 @@
 		<div class="aparte"></div>
 		<div class="aparte"></div>
 
-		<h2>Salí a bailar<span class="font24"> <br/>pensando que tu baile<br/> no es ni mejor ni peor que el de los demás. 
-			<br/>Es diferente, especial <br/>y tal vez único.</span></h2>
+		<h2>Aprendé <span class="font24"> a no memorizar figuras <br/>sino simplemente a usarlas sin pensar. <br/>
+		</span></h2>
+
+		<div class="aparte"></div>
+		<div class="aparte"></div>	
+		
+		<div class="bloque">
+			<div class="contenedorPorTercio">
+				<img src="./imagenes/tangoMemoria01.jpeg" />
+			</div>
+			<div class="contenedorPorTercio">
+				<img src="./imagenes/tangoMemoria02.png" />
+			</div>
+			<div class="contenedorPorTercio">
+				<img src="./imagenes/tangoMemoria03.png" />
+			</div>
+		</div>
+
+
+		<div class="aparte"></div>
+		<div class="aparte"></div>	
+		<div class="aparte"></div>
+		<div class="aparte"></div>	
+
+
+		<h2>Aprendé <span class="font24">a usar ganchos y sacadas <br/>solo en los momentos adecuados.</span></h2>
 
 		<div class="aparte"></div>
 		<div class="aparte"></div>		
@@ -140,38 +170,102 @@
 		<div class="aparte"></div>
 		<div class="bloque">
 			<div class="contenedorPorTercio">
-				<img src="./imagenes/unico01.png" />
+				<img src="./imagenes/tangoGancho01.png" />
 			</div>
 			<div class="contenedorPorTercio">
-				<img src="./imagenes/parejaTango01.png" />
+				<img src="./imagenes/tangoGancho02.jpeg" />
 			</div>
 			<div class="contenedorPorTercio">
-				<img src="./imagenes/unico03.png" />
+				<img src="./imagenes/tangoSacada01.png" />
 			</div>
 		</div>
 
-		<div class="aparte"></div>
-		<div class="aparte"></div>
+
 		<div class="aparte"></div>
 		<div class="aparte"></div>
 		<div class="aparte"></div>
 		<div class="aparte"></div>
 
-		<div style="display:flex;background-color:#4bdeeb">
-			<div class="contenedorPorTercioBajo" >
-				<div class="contenedorPorTercioBajo" >
+
+		<h2>Aprendé <span class="font24">a asociar el movimiento  <br/>a las ideas de <br/> agua, aire,
+	tierra y fuego</span></h2>
+
+<div class="aparte"></div>
+<div class="aparte"></div>		
+<div class="aparte"></div>
+<div class="aparte"></div>
+
+<div class="bloque">
+	<div class="contenedorPorTercio">
+		<img src="./imagenes/aire.jpeg" />
+	</div>
+	<div class="contenedorPorTercio">
+		<img src="./imagenes/tangoTierra.png" />
+	</div>
+	<div class="contenedorPorTercio">
+		<img src="./imagenes/tangoFuego01.jpeg" />
+	</div>
+</div>
+
+
+<div class="aparte"></div>
+<div class="aparte"></div>
+<div class="aparte"></div>
+<div class="aparte"></div>
+
+
+
+<h2>Salí a bailar<span class="font24"> <br/>pensando que tu baile<br/> no es ni mejor ni peor que el de los demás. 
+			<br/>Es diferente, especial <br/>y tal vez único.</span></h2>
+
+	<div class="aparte"></div>
+	<div class="aparte"></div>		
+	<div class="aparte"></div>
+	<div class="aparte"></div>
+	<div class="bloque">
+	<div class="contenedorPorTercio">
+		<img src="./imagenes/tangoPresentacion02.jpeg" />
+	</div>
+	<div class="contenedorPorTercio">
+		<img src="./imagenes/parejaTango01.png" />
+	</div>
+	<div class="contenedorPorTercio">
+		<img src="./imagenes/tangoFinal02.jpeg" />
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+	<div class="aparte"></div>
+	<div class="aparte"></div>
+	<div class="aparte"></div>
+	<div class="aparte"></div>
+	<div class="aparte"></div>
+	<div class="aparte"></div>
+
+		<hr/>
+
+		<div style="display:flex;background-color:white;color:black">
+			<div class="contenedorPorTercio" >
+				<div class="contenedorPorTercio" >
 					<img src="./imagenes/wahtsapp01.png" />
 				</div>
-				<div class="contenedorPorDosTerciosBajo" >
+				<div class="contenedorPorDosTercios" >
 					&nbsp;15 65069142 (Gustavo)
 				</div>
 			</div>
 			
-			<div class="contenedorPorTercioBajo" >
-				<div class="contenedorPorTercioBajo" >
+			<div class="contenedorPorTercio" >
+				<div class="contenedorPorTercio" >
 					<img src="./imagenes/gmail01.png" />
 				</div>
-				<div class="contenedorPorDosTerciosBajo">
+				<div class="contenedorPorDosTercios">
 					&nbsp;gwittbeckertango@gmail.com
 				</div>
 			</div>
