@@ -18,7 +18,7 @@
 	h1 {font-size:6em;text-align: center; }
 	h2 {font-size:3em;text-align: center;}
 	h3 {font-size:2em;text-align: left;}
-	.font24{font-size:20px} /*Para aplicar a un span por ejemplo*/
+	.fontGrande{font-size:22px} /*Para aplicar a un span por ejemplo*/
 	img {	
 	    max-width: 100%; /*Ancho libre permitiendo al navegador calcularla en base o otros paramentros 
 		sin sobrepasar en ancho el tamaño de la caja*/
@@ -30,9 +30,9 @@
 
 	div.enlace{clear:both;height:20px;}
 	div.enlace a {font-size:2em}
-	div.contenedorPorTercio{width:33%;height:180px;/*border-style:solid*/;float:left;display:flex;align-items:center}
-	div.contenedorPorMedio{width:50%;height:180px;/*border-style:solid*/;float:left;display:flex;align-items:center}
-	div.contenedorPorDosTercios{width:66%;height:180px;/*border-style:solid*/;float:left;display:flex;align-items:center}
+	div.contenedorPorTercio{width:33%;height:250px;/*border-style:solid;*/float:left;display:flex;align-items:center}
+	div.contenedorPorMedio{width:50%;height:250px;/*border-style:solid;*/float:left;display:flex;align-items:center}
+	div.contenedorPorDosTercios{width:66%;height:250px;/*border-style:solid;*/float:left;display:flex;align-items:center}
 	
 	div.contenedorPorTercioBajo{width:33%;height:50px;/*border-style:solid*/;float:left;display:flex;align-items:center}
 	div.contenedorPorMedioBajo{width:50%;height:50px;/*border-style:solid*/;float:left;display:flex;align-items:center}
@@ -63,7 +63,7 @@
 		<div class="aparte"></div>
 		<div class="aparte"></div>
 		<div class="aparte"></div>
-		<h2>Aprendé <span class="font24">a dominar tu cuerpo,<br/> a escuchar la música, 
+		<h2>Aprendé <span class="fontGrande">a dominar tu cuerpo,<br/> a escuchar la música, 
 			</br>a seguirla <br/>y sobre todo <br/>a hacer sentir bien a tu pareja.</span></h2>
 		<div class="aparte"></div>
 		<div class="aparte"></div>
@@ -85,7 +85,7 @@
 		<div class="aparte"></div>
 		<div class="aparte"></div>
 
-		<h2>Aprendé <span class="font24">a pararte bien, <br/>
+		<h2>Aprendé <span class="fontGrande">a pararte bien, <br/>
 							a caminar y a desplazarte correctamente,<br/>
 							a pivotear en giro con tus metatarsos y cadera,<br/>
 							a disociar el movimiento de tu torso.<br/>
@@ -111,7 +111,7 @@
 		<div class="aparte"></div>
 		<div class="aparte"></div>
 
-		<h2>Aprendé <span class="font24"> a marcar un abrazo firme <br/>y a la vez flexible,<br/>
+		<h2>Aprendé <span class="fontGrande"> a marcar un abrazo firme <br/>y a la vez flexible,<br/>
 		</span></h2>
 
 		<div class="aparte"></div>
@@ -137,7 +137,7 @@
 		<div class="aparte"></div>
 		<div class="aparte"></div>
 
-		<h2>Aprendé <span class="font24"> a no memorizar figuras <br/>sino simplemente a usarlas sin pensar. <br/>
+		<h2>Aprendé <span class="fontGrande"> a no memorizar figuras <br/>sino simplemente a usarlas sin pensar. <br/>
 		</span></h2>
 
 		<div class="aparte"></div>
@@ -162,7 +162,7 @@
 		<div class="aparte"></div>	
 
 
-		<h2>Aprendé <span class="font24">a usar ganchos y sacadas <br/>solo en los momentos adecuados.</span></h2>
+		<h2>Aprendé <span class="fontGrande">a usar ganchos y sacadas <br/>solo en los momentos adecuados.</span></h2>
 
 		<div class="aparte"></div>
 		<div class="aparte"></div>		
@@ -187,7 +187,7 @@
 		<div class="aparte"></div>
 
 
-		<h2>Aprendé <span class="font24">a asociar el movimiento  <br/>a las ideas de <br/> agua, aire,
+		<h2>Aprendé <span class="fontGrande">a asociar el movimiento  <br/>a las ideas de <br/> agua, aire,
 	tierra y fuego</span></h2>
 
 <div class="aparte"></div>
@@ -215,7 +215,7 @@
 
 
 
-<h2>Salí a bailar<span class="font24"> <br/>pensando que tu baile<br/> no es ni mejor ni peor que el de los demás. 
+<h2>Salí a bailar<span class="fontGrande"> <br/>pensando que tu baile<br/> no es ni mejor ni peor que el de los demás. 
 			<br/>Es diferente, especial <br/>y tal vez único.</span></h2>
 
 	<div class="aparte"></div>
@@ -257,7 +257,7 @@
 					<img src="./imagenes/wahtsapp01.png" />
 				</div>
 				<div class="contenedorPorDosTercios" >
-					&nbsp;15 65069142 (Gustavo)
+					&nbsp;<span class="fontGrande">15 65069142 (Gustavo)</span>
 				</div>
 			</div>
 			
@@ -266,7 +266,7 @@
 					<img src="./imagenes/gmail01.png" />
 				</div>
 				<div class="contenedorPorDosTercios">
-					&nbsp;gwittbeckertango@gmail.com
+					&nbsp;<span class="fontGrande">gwittbeckertango@gmail.com</span>
 				</div>
 			</div>
 
