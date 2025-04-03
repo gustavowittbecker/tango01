@@ -14,7 +14,7 @@
 	body {height:100%} /*va a ser el contenedor principal*/
 	div.encabezado{width:100%;height:20%;background-image: url("./imagenes/fluido02.jpg");
 		background-repeat: no-repeat;background-size: cover; background-position: center} /*Contenedor fijo*/
-	div.contenedor1 {height:80%;width:100%;padding: 20px;overflow:scroll} /*Contenedor scroleable*/
+	div.contenedorGlobal {height:80%;width:100%;padding: 20px;overflow:scroll} /*Contenedor scroleable*/
 	h1 {font-size:6em;text-align: center; }
 	h2 {font-size:3em;text-align: center;}
 	h3 {font-size:2em;text-align: left;}
@@ -44,9 +44,10 @@
 </Head>
 
 <body>
-	<div class="encabezado"><h1> Tango </h1></div>
-
-	<div class="contenedor1">
+	<header>
+		<div class="encabezado"><h1> Tango </h1></div>
+	</header>
+	<div class="contenedorGlobal">
 		<div class="aparte"></div>
 		<div class="aparte"></div>
 		<div class="aparte"></div>
@@ -63,6 +64,7 @@
 		<div class="aparte"></div>
 		<div class="aparte"></div>
 		<div class="aparte"></div>
+		<main>
 		<h2>Aprendé <span class="fontGrande">a dominar tu cuerpo,<br/> a escuchar la música, 
 			</br>a seguirla <br/>y sobre todo <br/>a hacer sentir bien a tu pareja.</span></h2>
 		<div class="aparte"></div>
@@ -195,6 +197,7 @@
 <div class="aparte"></div>
 <div class="aparte"></div>
 
+
 <div class="bloque">
 	<div class="contenedorPorTercio">
 		<img src="./imagenes/aire.jpeg" />
@@ -222,6 +225,8 @@
 	<div class="aparte"></div>		
 	<div class="aparte"></div>
 	<div class="aparte"></div>
+
+
 	<div class="bloque">
 	<div class="contenedorPorTercio">
 		<img src="./imagenes/tangoPresentacion02.jpeg" />
@@ -249,8 +254,13 @@
 	<div class="aparte"></div>
 	<div class="aparte"></div>
 
-		<hr/>
 
+	<h2>Aprender a bailar el tango <br/>en serio <span class="fontGrande"><br/>
+							es un camino de ida sin regreso.<br/>
+	</h2>
+
+	<hr/>
+</main>
 		<div style="display:flex;background-color:white;color:black">
 			<div class="contenedorPorTercio" >
 				<div class="contenedorPorTercio" >
@@ -281,7 +291,7 @@
 		<div class="aparte"></div>
 
 
-	</div> <!--Cierra contenedor1-->
+	</div> <!--Cierra contenedorGlobal-->
 
 </body>
 </html>
