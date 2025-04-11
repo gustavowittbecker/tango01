@@ -349,7 +349,7 @@ let lenguaje = window.navigator.languages; //Es un array
 
 /*document.getElementById("demo").innerHTML = lenguaje[0]; */
 
-alert(lenguaje[0]);
+//alert(lenguaje[0]);
 
 if (lenguaje[0]=="es-ES") {
 	//alert("español");
