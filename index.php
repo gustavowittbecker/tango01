@@ -10,12 +10,19 @@
 <style>
 	* {font-family: Garamond, serif;color:dimgray;font-size:16px;
 		margin:0;padding:0;box-sizing: border-box;}
-	html{height:100%;}
+	html {height:100%;}
 	body {height:100%} /*va a ser el contenedor principal*/
+
 	div.encabezado{width:100%;height:20%;background-image: url("./imagenes/fluido02.jpg");
 		background-repeat: no-repeat;background-size: cover; background-position: center} /*Contenedor fijo*/
-	div.contenedorGlobal {height:80%;width:100%;padding: 20px;overflow:scroll} /*Contenedor scroleable*/
-	h1 {font-size:6em;text-align: center; }
+
+	div.videos{display:flex;justify-content:center;width:100%;height:25%;opacity:1;/*background-color:yellow;*/padding:10px}
+
+	div.contenedorGlobal {height:55%;width:100%;padding: 20px;overflow:scroll} /*Contenedor scroleable*/
+
+	div.accion {cursor:pointer;height:200px;display:flex;justify-content:center;background-Color:blue}
+
+	h1 {font-size:6em;text-align: center;}
 	h2 {font-size:3em;text-align: center;}
 	h3 {font-size:2em;text-align: left;}
 
@@ -31,181 +38,142 @@
 
 	div.aparte{clear:both;height:100px;background-color:white}
 
-	div.enlace{clear:both;height:20px;}
+	div.enlace{clear:both;height:40px;}
 	div.enlace a {font-size:2em}
 	div.contenedorPorTercio{width:33%;height:250px;/*border-style:solid;*/float:left;display:flex;align-items:center}
-	div.contenedorPorMedio{width:50%;height:250px;/*border-style:solid;*/float:left;display:flex;align-items:center}
+	div.contenedorPorMedio{float:left;width:50%;height:250px;display:flex;justify-content:center;/*background-color:blue;*/align-items:center}
 	div.contenedorPorDosTercios{width:66%;height:250px;/*border-style:solid;*/float:left;display:flex;align-items:center}
 	
-	div.contenedorPorTercioBajo{width:33%;height:50px;/*border-style:solid*/;float:left;display:flex;align-items:center}
-	div.contenedorPorMedioBajo{width:50%;height:50px;/*border-style:solid*/;float:left;display:flex;align-items:center}
-	div.contenedorPorDosTerciosBajo{width:66%;height:50px;/*border-style:solid*/;float:left;display:flex;align-items:center}
-
 
 	div.bloque{display:block}
+
+	h2.enlace1{cursor:pointer}
+
+	div.modal {
+	}
+
 </style>
 
 </Head>
 
-
-
-
-
-
 <body>
-	<header>
-		<div class="encabezado"><h1> Tango </h1></div>
-	</header>
+
+	<div class="encabezado"><h1> Tango </h1>
+	</div>
+	<div id="peli" class="videos">
+	</div>
+
 	<div class="contenedorGlobal">
+
 		<div class="aparte"></div>
 
 		<hr />		
 		<h2 id="bailarEnSerio"></h2>		
 		<hr />
-
-
-		<div class="aparte"></div>
-		<main>
-		<h2 id="dominarCuerpo"></h2>
-		<div class="aparte"></div>
 		<div class="aparte"></div>
 		
+
 		<div class="bloque">
-			<div class="contenedorPorTercio">
-				<img src="./imagenes/unico01.png" />
+			<div class="contenedorPorTercio" style="">
+				<div id="imgDominarCuerpo" class="accion" style="">
+					<img src="./imagenes/unico01.png">
+				</div>
 			</div>
-			<div class="contenedorPorTercio">
-				<img src="./imagenes/unico02.png" />
+
+			<div class="contenedorPorTercio" style="">
 			</div>
-			<div class="contenedorPorTercio">
-				<img src="./imagenes/unico04.png" />
+
+			<div class="contenedorPorTercio" style="">
+				<h2 id="textoDominarCuerpo"></h2>
 			</div>
 		</div>
 
 		<div class="aparte"></div>
-
-		<h2 id="pararteBien"></h2>
-
 		<div class="aparte"></div>
-
-		<div class="bloque">
-			<div class="contenedorPorTercio">
-				<img src="./imagenes/tangoCaminata01.jpg" />
-			</div>
-			<div class="contenedorPorTercio">
-				<img src="./imagenes/parejaTango1.jpeg" />
-			</div>
-			<div class="contenedorPorTercio">
-				<img src="./imagenes/tangoCaminata02.png" />
-			</div>
-		</div>
-
-		<div class="aparte"></div>
-
-
-		<h2 id="abrazo"></h2>
-
-		<div class="aparte"></div>
-
 		
-		
-
-		
-		<div class="bloque">
-			<div class="contenedorPorTercio">
-				<img  src="./imagenes/abrazo01.png" />
-			</div>
-			<div class="contenedorPorTercio">
-				<img src="./imagenes/unico04.png" />
-			</div>
-			<div class="contenedorPorTercio">
-				<img src="./imagenes/tangoAbrazo02.png" />
-			</div>
-		</div>
-
-		<div class="aparte"></div>
-
-
-		<h2 id="memorizar"></h2>
-
-		<div class="aparte"></div>
 	
+		<div class="bloque">
+			<div class="contenedorPorTercio" style="">
+				<div id="imgPararteBien" class="accion" style="">
+					<img src="./imagenes/parejaTango1.jpeg">
+				</div>
+			</div>
+
+			<div class="contenedorPorTercio" style="">
+			</div>
+
+			<div class="contenedorPorTercio" style="">
+				<h2 id="textoPararteBien"></h2>
+			</div>
+		</div>
+
+		<div class="aparte"></div>
+		<div class="aparte"></div>
+
 
 		<div class="bloque">
-			<div class="contenedorPorTercio">
-				<img src="./imagenes/tangoMemoria01.jpeg" />
+			<div class="contenedorPorTercio" style="">
+				<div id="imgAbrazo" class="accion" style="">
+					<img src="./imagenes/abrazo01.png">
+				</div>
 			</div>
-			<div class="contenedorPorTercio">
-				<img src="./imagenes/tangoMemoria02.png" />
+
+			<div class="contenedorPorTercio" style="">
 			</div>
-			<div class="contenedorPorTercio">
-				<img src="./imagenes/tangoMemoria03.png" />
+
+			<div class="contenedorPorTercio" style="">
+				<h2 id="textoAbrazo"></h2>
 			</div>
 		</div>
 
 
-		<div class="aparte"></div>	
-
-
-		<h2 id="ganchos"></h2>
-
+		<div class="aparte"></div>
 		<div class="aparte"></div>
 
+
+
+
 		<div class="bloque">
-			<div class="contenedorPorTercio">
-				<img src="./imagenes/tangoGancho01.png" />
+			<div class="contenedorPorTercio" style="">
+				<div id="imgMemoria" class="accion" style="">
+					<img src="./imagenes/tangoMemoria01.jpeg">
+				</div>
 			</div>
-			<div class="contenedorPorTercio">
-				<img src="./imagenes/tangoGancho02.jpeg" />
+
+			<div class="contenedorPorTercio" style="">
 			</div>
-			<div class="contenedorPorTercio">
-				<img src="./imagenes/tangoSacada01.png" />
+
+
+			<div class="contenedorPorTercio" style="">
+				<h2 id="textoMemorizar"></h2>
 			</div>
 		</div>
 
 
 		<div class="aparte"></div>
-
-
-		<h2 id="aft"></h2>
-
-<div class="aparte"></div>
-
-
-<div class="bloque">
-	<div class="contenedorPorTercio">
-		<img src="./imagenes/aire.jpeg" />
-	</div>
-	<div class="contenedorPorTercio">
-		<img src="./imagenes/tangoTierra.png" />
-	</div>
-	<div class="contenedorPorTercio">
-		<img src="./imagenes/tangoFuego01.jpeg" />
-	</div>
-</div>
-
-
-<div class="aparte"></div>
+		<div class="aparte"></div>
 
 
 
-<h2 id="sali"></h2>
+		<div class="bloque">
+			<div class="contenedorPorTercio" style="">
+				<div id="imgGancho" class="accion" style="">
+					<img src="./imagenes/tangoGancho02.jpeg">
+				</div>
+			</div>
 
-	<div class="aparte"></div>
+			<div class="contenedorPorTercio" style="">
+			</div>
 
 
+			<div class="contenedorPorTercio" style="">
+				<h2 id="textoGanchos"></h2>
+			</div>
+		</div>
 
-	<div class="bloque">
-	<div class="contenedorPorTercio">
-		<img src="./imagenes/tangoPresentacion02.jpeg" />
-	</div>
-	<div class="contenedorPorTercio">
-		<img src="./imagenes/parejaTango01.png" />
-	</div>
-	<div class="contenedorPorTercio">
-		<img src="./imagenes/tangoFinal02.jpeg" />
-	</div>
-</div>
+
+		<div class="aparte"></div>
+		<div class="aparte"></div>
 
 
 
@@ -215,16 +183,19 @@
 
 
 
-	<div class="aparte"></div>
-	<div class="aparte"></div>
-	
 
-	<hr/>
-	<h2 id="aprenderTango"></h2>
 
-	<hr/>
-</main>
 
+
+
+
+
+
+
+
+
+
+		<hr/>
 
 		<div style="display:flex;background-color:white;color:black">
 			<div class="contenedorPorTercio" >
@@ -247,9 +218,6 @@
 
 		</div>
 
-		<!--<div class="contenedorPorMedio"><img src="./imagenes/instagram01.jpg" /></div>
-		<div class="logosTexto">&nbsp;@gustavowittbecker</div>-->
-
 
 		<div class="aparte"></div>
 		<div class="aparte"></div>
@@ -258,9 +226,12 @@
 		
 	</div> <!--Cierra contenedorGlobal-->
 
-
-
 </body>
+
+
+
+
+
 
 <script>
 
@@ -354,27 +325,39 @@ let lenguaje = window.navigator.languages; //Es un array
 if (lenguaje[0]=="es-ES") {
 	//alert("español");
 	document.getElementById("bailarEnSerio").innerHTML = es_bailarEnSerio;
-	document.getElementById("dominarCuerpo").innerHTML = es_dominarCuerpo;
-	document.getElementById("pararteBien").innerHTML = es_pararteBien;
-	document.getElementById("abrazo").innerHTML = es_abrazo;
-	document.getElementById("memorizar").innerHTML = es_memorizar;
-	document.getElementById("ganchos").innerHTML = es_ganchos;
-	document.getElementById("aft").innerHTML = es_aft;
-	document.getElementById("sali").innerHTML = es_sali;
-	document.getElementById("aprenderTango").innerHTML = es_aprenderTango;
+	document.getElementById("textoDominarCuerpo").innerHTML = es_dominarCuerpo;
+	document.getElementById("textoPararteBien").innerHTML = es_pararteBien;
+	document.getElementById("textoAbrazo").innerHTML = es_abrazo;
+	document.getElementById("textoMemorizar").innerHTML = es_memorizar;
+	document.getElementById("textoGanchos").innerHTML = es_ganchos;
+	document.getElementById("textoAft").innerHTML = es_aft;
+	document.getElementById("textoSali").innerHTML = es_sali;
+	document.getElementById("textoAprenderTango").innerHTML = es_aprenderTango;
 }
 else if (lenguaje[0]=="en") {
 	//alert("ingles");
 	document.getElementById("bailarEnSerio").innerHTML = en_bailarEnSerio;
-	document.getElementById("dominarCuerpo").innerHTML = en_dominarCuerpo;
-	document.getElementById("pararteBien").innerHTML = en_pararteBien;
-	document.getElementById("abrazo").innerHTML = en_abrazo;
-	document.getElementById("memorizar").innerHTML = en_memorizar;
-	document.getElementById("ganchos").innerHTML = en_ganchos;
-	document.getElementById("aft").innerHTML = en_aft;
-	document.getElementById("sali").innerHTML = en_sali;
-	document.getElementById("aprenderTango").innerHTML = en_aprenderTango;
+	document.getElementById("textoDominarCuerpo").innerHTML = en_dominarCuerpo;
+	document.getElementById("textoPararteBien").innerHTML = en_pararteBien;
+	document.getElementById("textoAbrazo").innerHTML = en_abrazo;
+	document.getElementById("textoMemorizar").innerHTML = en_memorizar;
+	document.getElementById("textoGanchos").innerHTML = en_ganchos;
+	//document.getElementById("textoAft").innerHTML = en_aft;
+	//document.getElementById("textoSali").innerHTML = en_sali;
+	//document.getElementById("textoAprenderTango").innerHTML = en_aprenderTango;
 }
+
+
+document.getElementById("imgDominarCuerpo").addEventListener("click", function() {
+	document.getElementById("peli").innerHTML = "<iframe src='https://www.youtube.com/embed/278iWcOadL8?si=hDBB68yQuD_EnMd8' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>";	
+});
+
+document.getElementById("imgPararteBien").addEventListener("click", function() {
+	document.getElementById("peli").innerHTML = "<iframe src='https://www.youtube.com/embed/D3MhYo_maZk?si=5Y4e5Fc6ntNcmZy_' title='YouTube video player' frameborder='0' ; autoplay; encrypted-media; web-share; referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>";	
+});
+document.getElementById("imgAbrazo").addEventListener("click", function() {
+	document.getElementById("peli").innerHTML = "";	
+});
 
 </script>
 </html>
