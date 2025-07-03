@@ -58,7 +58,7 @@
 
 <body>
 
-	<div class="encabezado"><h1> Tango </h1>
+	<div class="encabezado"><h1> Tango Color </h1>
 	</div>
 	<div id="peli" class="videos">
 	</div>
