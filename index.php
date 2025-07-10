@@ -2,23 +2,101 @@
 
 <html lang="es">
 <Head> 
-<TITLE>Taller y clases de Tango</TITLE>
+<TITLE>Taller Tango</TITLE>
 
 <meta http-equiv="Content-Type" content="text/html" />
-<meta charset="utf-8" /> 
+<meta charset="utf-8" />
 
 <style>
-	* {font-family: Garamond, serif;color:dimgray;font-size:16px;
-		margin:0;padding:0;box-sizing: border-box;}
-	html {height:100%;}
+	* {	font-family: Garamond, serif;
+		color:dimgray;font-size:16px;
+		margin:0;
+		padding:0;
+		box-sizing: border-box;}
+	html {height:100%}
 	body {height:100%} /*va a ser el contenedor principal*/
+
+
+	/*Estilos para todo lo modal*/
+
+
+	div.ventanaModalApagada {
+		position:fixed;
+		left:18%;
+		top:18%;
+		width:40%;
+		height:60%;
+		background-color:yellow;
+		color:black;
+		z-index:1;
+		overflow:hidden;
+		visibility: hidden;
+	}
+	
+	div.ventanaModalPrendida {
+		position:fixed;
+		left:18%;
+		top:18%;
+		
+		width:40%;
+		height:70%;
+		
+		background-color:yellow;
+		color:black;
+		z-index:1;
+		overflow:hidden;
+		visibility: visible;
+	}
+
+	
+	div.encabezadoModal {
+		width:100%;
+		height:10%;
+		background-color:lightblue;
+	}
+
+	div.btCruz {
+		color:red;
+		width:10%;
+		height:100%;
+		background-color: #BBBBBB;
+		float:right;
+		cursor:pointer;
+		display: flex; /*Permite flexibilizar el contenido*/
+		justify-content: center; /*Permite centrar al medio en x el contenido*/
+		align-items: center; /*Permite centrar al medio en y el contenido*/
+	}
+
+
+	div.contenidoModal {
+		width:100%;
+		height:90%;
+		background-color: blue;
+	}
+	
+
+	div.videos{	display:flex;		/*Contenedor del iframe del video dentro del contenidoModal*/
+				justify-content:center;
+				width:100%;
+				height:100%; /*por ciento de contenido modal*/
+				opacity:1;/*background-color:yellow;*/
+				border-style:solid;
+			}
+
+
+
+	/*Estilos para el documento de base*/
 
 	div.encabezado{width:100%;height:20%;background-image: url("./imagenes/fluido02.jpg");
 		background-repeat: no-repeat;background-size: cover; background-position: center} /*Contenedor fijo*/
 
-	div.videos{display:flex;justify-content:center;width:100%;height:25%;opacity:1;/*background-color:yellow;*/padding:10px}
 
-	div.contenedorGlobal {height:55%;width:100%;padding: 20px;overflow:scroll} /*Contenedor scroleable*/
+
+	div.contenedorGlobal {
+				height:80%;
+				border-style:solid;
+				width:100%;
+				overflow-y:scroll} /*Contenedor scroleable*/
 
 	div.accion {cursor:pointer;height:200px;display:flex;justify-content:center;background-Color:blue}
 
@@ -49,8 +127,6 @@
 
 	h2.enlace1{cursor:pointer}
 
-	div.modal {
-	}
 
 </style>
 
@@ -58,13 +134,12 @@
 
 <body>
 
-	<div class="encabezado"><h1> Tango Color </h1>
+	<div class="encabezado"><h1> Tango en Buenos Aires</h1>
 	</div>
-	<div id="peli" class="videos">
-	</div>
+
 
 	<div class="contenedorGlobal">
-
+		
 		<div class="aparte"></div>
 
 		<hr />		
@@ -74,16 +149,17 @@
 		
 
 		<div class="bloque">
-			<div class="contenedorPorTercio" style="">
+			<div class="contenedorPorTercio" >
 				<div id="imgDominarCuerpo" class="accion" style="">
-					<img src="./imagenes/unico01.png">
+					<img  src="./imagenes/unico01.png">
 				</div>
 			</div>
 
-			<div class="contenedorPorTercio" style="">
+			<div class="contenedorPorTercio" >
+				<img id="idPrendeVideo1" style="cursor:pointer" src="./imagenes/iconoVideo.png" />
 			</div>
 
-			<div class="contenedorPorTercio" style="">
+			<div class="contenedorPorTercio" >
 				<h2 id="textoDominarCuerpo"></h2>
 			</div>
 		</div>
@@ -93,16 +169,17 @@
 		
 	
 		<div class="bloque">
-			<div class="contenedorPorTercio" style="">
-				<div id="imgPararteBien" class="accion" style="">
+			<div class="contenedorPorTercio" >
+				<div id="imgPararteBien" class="accion" >
 					<img src="./imagenes/parejaTango1.jpeg">
 				</div>
 			</div>
 
-			<div class="contenedorPorTercio" style="">
+			<div class="contenedorPorTercio" >
+				<img id="idPrendeVideo2" src="./imagenes/iconoVideo.png" />
 			</div>
 
-			<div class="contenedorPorTercio" style="">
+			<div class="contenedorPorTercio" >
 				<h2 id="textoPararteBien"></h2>
 			</div>
 		</div>
@@ -112,16 +189,17 @@
 
 
 		<div class="bloque">
-			<div class="contenedorPorTercio" style="">
-				<div id="imgAbrazo" class="accion" style="">
+			<div class="contenedorPorTercio" >
+				<div id="imgAbrazo" class="accion" >
 					<img src="./imagenes/abrazo01.png">
 				</div>
 			</div>
 
-			<div class="contenedorPorTercio" style="">
+			<div class="contenedorPorTercio" >
+				<img id="idPrendeVideo3" src="./imagenes/iconoVideo.png" />
 			</div>
 
-			<div class="contenedorPorTercio" style="">
+			<div class="contenedorPorTercio" >
 				<h2 id="textoAbrazo"></h2>
 			</div>
 		</div>
@@ -134,17 +212,18 @@
 
 
 		<div class="bloque">
-			<div class="contenedorPorTercio" style="">
-				<div id="imgMemoria" class="accion" style="">
+			<div class="contenedorPorTercio" >
+				<div id="imgMemoria" class="accion" >
 					<img src="./imagenes/tangoMemoria01.jpeg">
 				</div>
 			</div>
 
-			<div class="contenedorPorTercio" style="">
+			<div class="contenedorPorTercio" >
+				<img id="idPrendeVideo4" src="./imagenes/iconoVideo.png" />
 			</div>
 
 
-			<div class="contenedorPorTercio" style="">
+			<div class="contenedorPorTercio" >
 				<h2 id="textoMemorizar"></h2>
 			</div>
 		</div>
@@ -156,17 +235,17 @@
 
 
 		<div class="bloque">
-			<div class="contenedorPorTercio" style="">
-				<div id="imgGancho" class="accion" style="">
+			<div class="contenedorPorTercio" >
+				<div id="imgGancho" class="accion" >
 					<img src="./imagenes/tangoGancho02.jpeg">
 				</div>
 			</div>
 
-			<div class="contenedorPorTercio" style="">
+			<div class="contenedorPorTercio" >
 			</div>
 
 
-			<div class="contenedorPorTercio" style="">
+			<div class="contenedorPorTercio" >
 				<h2 id="textoGanchos"></h2>
 			</div>
 		</div>
@@ -174,23 +253,6 @@
 
 		<div class="aparte"></div>
 		<div class="aparte"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -226,6 +288,25 @@
 		
 	</div> <!--Cierra contenedorGlobal-->
 
+
+
+<!--ventana modal 1 -->
+
+<div id="ventanaModal" class="ventanaModalApagada">   <!--ventana modal 1-->
+	<div id="encabezadoModal1" class="encabezadoModal" >
+		Videos
+		<div id="btCruz" class="btCruz">X</div>
+	</div>
+	<div id="contenidoModal1" class="contenidoModal">
+		<div id="peli1" class="videos"></div>
+	</div>
+
+</div> <!--cierra ventanaModal-->
+
+
+
+
+
 </body>
 
 
@@ -234,6 +315,60 @@
 
 
 <script>
+
+
+
+/*Acciones al pulsar los links a videos*/
+
+
+document.getElementById("idPrendeVideo1").addEventListener("click", function() {
+	//alert("Prender video");
+	document.getElementById("ventanaModal").className="ventanaModalPrendida";
+	document.getElementById("peli1").innerHTML = "<iframe width='100%' height='100%' src='./videos/gusMirta01.m4v'>";	
+});
+
+
+
+document.getElementById("idPrendeVideo2").addEventListener("click", function() {
+	//alert("Prender video2");
+	document.getElementById("ventanaModal").className="ventanaModalPrendida";
+	document.getElementById("peli1").innerHTML = "<iframe width='100%' height='100%' src='./videos/tangoGiroCombinado01.mp4'>";	
+});
+
+
+document.getElementById("idPrendeVideo3").addEventListener("click", function() {
+	//alert("Prender video3");
+	document.getElementById("ventanaModal").className="ventanaModalPrendida";
+	document.getElementById("peli1").innerHTML = "<iframe width='100%' height='100%' src='./videos/tangoMexico.mp4'>";	
+});
+
+document.getElementById("idPrendeVideo4").addEventListener("click", function() {
+	//alert("Prender video4");
+	document.getElementById("ventanaModal").className="ventanaModalPrendida";
+	document.getElementById("peli1").innerHTML = "<iframe width='100%' height='100%' src='./videos/GanchoPos8Adelante.m4v'>";	
+});
+
+
+document.getElementById("btCruz").addEventListener("click", function() {
+	document.getElementById("ventanaModal").className="ventanaModalApagada";
+});
+
+
+document.getElementById("imgDominarCuerpo").addEventListener("click", function() {
+
+});
+
+document.getElementById("imgPararteBien").addEventListener("click", function() {
+	document.getElementById("peli1").innerHTML = "<iframe width='100%' height='100%' src='./videos/tangoGiroCombinado01.mp4' ></iframe>";	
+});
+document.getElementById("imgAbrazo").addEventListener("click", function() {
+	document.getElementById("peli1").innerHTML = "";	
+});
+
+
+
+
+//document.getElementById("ventanaModal").className="ventanaModalApagada";
 
 const es_bailarEnSerio = "Aprendé <span class='fontGrande'>a bailar en serio</span>";
 const en_bailarEnSerio = "Learn to <span class='fontGrande'> dance seriously </span>";
@@ -348,16 +483,9 @@ else if (lenguaje[0]=="en") {
 }
 
 
-document.getElementById("imgDominarCuerpo").addEventListener("click", function() {
-	document.getElementById("peli").innerHTML = "<iframe src='https://www.youtube.com/embed/278iWcOadL8?si=hDBB68yQuD_EnMd8' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>";	
-});
 
-document.getElementById("imgPararteBien").addEventListener("click", function() {
-	document.getElementById("peli").innerHTML = "<iframe src='https://www.youtube.com/embed/D3MhYo_maZk?si=5Y4e5Fc6ntNcmZy_' title='YouTube video player' frameborder='0' ; autoplay; encrypted-media; web-share; referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>";	
-});
-document.getElementById("imgAbrazo").addEventListener("click", function() {
-	document.getElementById("peli").innerHTML = "";	
-});
+
+
 
 </script>
 </html>
