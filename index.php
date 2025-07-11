@@ -12,7 +12,8 @@
 		color:dimgray;font-size:16px;
 		margin:0;
 		padding:0;
-		box-sizing: border-box;}
+		box-sizing: border-box;
+	}
 	html {height:100%}
 	body {height:100%} /*va a ser el contenedor principal*/
 
@@ -20,27 +21,25 @@
 	/*Estilos para todo lo modal*/
 
 
-	div.ventanaModalApagada {
+	div.ventanaModalApagada { /*Esta ventana se abrira en una determinada posicion*/
 		position:fixed;
 		left:18%;
 		top:18%;
 		width:40%;
 		height:60%;
-		background-color:yellow;
+		background-color:yellow; /*solo para ver como va quedando*/
 		color:black;
 		z-index:1;
 		overflow:hidden;
-		visibility: hidden;
+		visibility: hidden; /*Para elementos que estan pero no se ven*/
 	}
 	
 	div.ventanaModalPrendida {
 		position:fixed;
 		left:18%;
-		top:18%;
-		
+		top:18%;		
 		width:40%;
-		height:70%;
-		
+		height:70%;	
 		background-color:yellow;
 		color:black;
 		z-index:1;
@@ -49,46 +48,40 @@
 	}
 
 	
-	div.encabezadoModal {
+	div.encabezadoModal { /*Para encabezar el contenido de la vent modal*/
 		width:100%;
 		height:10%;
 		background-color:lightblue;
 	}
 
-	div.btCruz {
+	div.btCruz { /*Para cerrar las ventanas modales*/
 		color:red;
 		width:10%;
 		height:100%;
 		background-color: #BBBBBB;
-		float:right;
+		float:right; /*Flota a la derecha de su contenedor padre*/
 		cursor:pointer;
-		display: flex; /*Permite flexibilizar el contenido*/
+		display: flex; /*Permite flexibilizar el contenido. En este caso la cruz*/
 		justify-content: center; /*Permite centrar al medio en x el contenido*/
 		align-items: center; /*Permite centrar al medio en y el contenido*/
 	}
 
 
-	div.contenidoModal {
+	div.contenidoModal { /*Aqui insertara el iframe con el video que corresponda */ 
 		width:100%;
 		height:90%;
 		background-color: blue;
+		border-style:solid;
+		opacity:1;
+		border-style:solid;
 	}
 	
-
-	div.videos{	display:flex;		/*Contenedor del iframe del video dentro del contenidoModal*/
-				justify-content:center;
-				width:100%;
-				height:100%; /*por ciento de contenido modal*/
-				opacity:1;/*background-color:yellow;*/
-				border-style:solid;
-			}
-
 
 
 	/*Estilos para el documento de base*/
 
 	div.encabezado{width:100%;height:20%;background-image: url("./imagenes/fluido02.jpg");
-		background-repeat: no-repeat;background-size: cover; background-position: center} /*Contenedor fijo*/
+		background-repeat: no-repeat;background-size: cover; background-position: center} /*Contenedor fijo ocupando el 20%*/
 
 
 
@@ -98,7 +91,7 @@
 				width:100%;
 				overflow-y:scroll} /*Contenedor scroleable*/
 
-	div.accion {cursor:pointer;height:200px;display:flex;justify-content:center;background-Color:blue}
+	.accion {cursor:pointer;height:200px;display:flex;justify-content:center;background-Color:blue}
 
 	h1 {font-size:6em;text-align: center;}
 	h2 {font-size:3em;text-align: center;}
@@ -134,7 +127,7 @@
 
 <body>
 
-	<div class="encabezado"><h1> Tango en Buenos Aires</h1>
+	<div class="encabezado"><h1>Tango en Buenos Aires</h1>
 	</div>
 
 
@@ -149,14 +142,14 @@
 		
 
 		<div class="bloque">
-			<div class="contenedorPorTercio" >
-				<div id="imgDominarCuerpo" class="accion" style="">
+			<div class="contenedorPorTercio">
+				<div id="imgDominarCuerpo">
 					<img  src="./imagenes/unico01.png">
 				</div>
 			</div>
 
 			<div class="contenedorPorTercio" >
-				<img id="idPrendeVideo1" style="cursor:pointer" src="./imagenes/iconoVideo.png" />
+				<img id="idPrendeDominarCuerpo" class="accion" src="./imagenes/iconoVideo.png" />
 			</div>
 
 			<div class="contenedorPorTercio" >
@@ -176,7 +169,7 @@
 			</div>
 
 			<div class="contenedorPorTercio" >
-				<img id="idPrendeVideo2" src="./imagenes/iconoVideo.png" />
+				<img id="idPrendePararteBien" src="./imagenes/iconoVideo.png" />
 			</div>
 
 			<div class="contenedorPorTercio" >
@@ -196,7 +189,7 @@
 			</div>
 
 			<div class="contenedorPorTercio" >
-				<img id="idPrendeVideo3" src="./imagenes/iconoVideo.png" />
+				<img id="idPrendeAbrazo" src="./imagenes/iconoVideo.png" />
 			</div>
 
 			<div class="contenedorPorTercio" >
@@ -219,7 +212,7 @@
 			</div>
 
 			<div class="contenedorPorTercio" >
-				<img id="idPrendeVideo4" src="./imagenes/iconoVideo.png" />
+				<img id="idPrendeTangoMemoria" src="./imagenes/iconoVideo.png" />
 			</div>
 
 
@@ -293,12 +286,12 @@
 <!--ventana modal 1 -->
 
 <div id="ventanaModal" class="ventanaModalApagada">   <!--ventana modal 1-->
-	<div id="encabezadoModal1" class="encabezadoModal" >
+	<div id="encabezadoModal" class="encabezadoModal" >
 		Videos
 		<div id="btCruz" class="btCruz">X</div>
 	</div>
-	<div id="contenidoModal1" class="contenidoModal">
-		<div id="peli1" class="videos"></div>
+	<div id="peli" class="contenidoModal">
+		<!--<div id="peli" class="videos"></div>-->
 	</div>
 
 </div> <!--cierra ventanaModal-->
@@ -321,32 +314,33 @@
 /*Acciones al pulsar los links a videos*/
 
 
-document.getElementById("idPrendeVideo1").addEventListener("click", function() {
+document.getElementById("idPrendeDominarCuerpo").addEventListener("click", function() {
 	//alert("Prender video");
 	document.getElementById("ventanaModal").className="ventanaModalPrendida";
-	document.getElementById("peli1").innerHTML = "<iframe width='100%' height='100%' src='./videos/gusMirta01.m4v'>";	
+	document.getElementById("peli").innerHTML = "<iframe width='100%' height='100%' src='./videos/gusMirta01.m4v'>";	
 });
 
 
 
-document.getElementById("idPrendeVideo2").addEventListener("click", function() {
-	//alert("Prender video2");
+document.getElementById("idPrendePararteBien").addEventListener("click", function() {
+	//alert("Prender video);
 	document.getElementById("ventanaModal").className="ventanaModalPrendida";
-	document.getElementById("peli1").innerHTML = "<iframe width='100%' height='100%' src='./videos/tangoGiroCombinado01.mp4'>";	
+	document.getElementById("peli").innerHTML = "<iframe width='100%' height='100%' src='./videos/tangoGiroCombinado01.mp4'>";	
 });
 
 
-document.getElementById("idPrendeVideo3").addEventListener("click", function() {
-	//alert("Prender video3");
+document.getElementById("idPrendeAbrazo").addEventListener("click", function() {
+	//alert("Prender video");
 	document.getElementById("ventanaModal").className="ventanaModalPrendida";
-	document.getElementById("peli1").innerHTML = "<iframe width='100%' height='100%' src='./videos/tangoMexico.mp4'>";	
+	document.getElementById("peli").innerHTML = "<iframe width='100%' height='100%' src='./videos/tangoMexico.mp4'>";	
 });
 
-document.getElementById("idPrendeVideo4").addEventListener("click", function() {
-	//alert("Prender video4");
+document.getElementById("idPrendeTangoMemoria").addEventListener("click", function() {
+	//alert("Prender video");
 	document.getElementById("ventanaModal").className="ventanaModalPrendida";
-	document.getElementById("peli1").innerHTML = "<iframe width='100%' height='100%' src='./videos/GanchoPos8Adelante.m4v'>";	
+	document.getElementById("peli").innerHTML = "<iframe width='100%' height='100%' src='./videos/GanchoPos8Adelante.m4v'>";	
 });
+
 
 
 document.getElementById("btCruz").addEventListener("click", function() {
@@ -354,21 +348,8 @@ document.getElementById("btCruz").addEventListener("click", function() {
 });
 
 
-document.getElementById("imgDominarCuerpo").addEventListener("click", function() {
 
-});
-
-document.getElementById("imgPararteBien").addEventListener("click", function() {
-	document.getElementById("peli1").innerHTML = "<iframe width='100%' height='100%' src='./videos/tangoGiroCombinado01.mp4' ></iframe>";	
-});
-document.getElementById("imgAbrazo").addEventListener("click", function() {
-	document.getElementById("peli1").innerHTML = "";	
-});
-
-
-
-
-//document.getElementById("ventanaModal").className="ventanaModalApagada";
+/*Traducción*/
 
 const es_bailarEnSerio = "Aprendé <span class='fontGrande'>a bailar en serio</span>";
 const en_bailarEnSerio = "Learn to <span class='fontGrande'> dance seriously </span>";
@@ -438,15 +419,6 @@ const en_aprenderTango = "Learn to dance Tango seriusly <br /><span class='fontG
 
 
 
-
-
-/*
-
-const es_ = "Aprendé <span class='fontGrande'>"+
-			"</span>";
-const en_ = "Learn not to <span class='fontGrande'>"+
-			"</span>";
-*/
 
 							
 
