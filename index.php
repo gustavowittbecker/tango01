@@ -147,7 +147,7 @@
 
 	<div class="encabezado">
 		<div >
-			<span class="fontGrande">Tango</span>
+			<span class="fontTitulo">Tango</span>
 			<span class="fontMedio">en Buenos Aires</span>
 		</div>
 	</div>
@@ -477,58 +477,58 @@ document.getElementById("btCruz").addEventListener("click", function() {
 /*Traducción*/
 
 const es_bailarEnSerio = "<span class='fontGrande'>Aprendé</span><span class='fontMedio'>a bailar en serio</span>";
-const en_bailarEnSerio = "<span class='fontGrande'>Learn to</span><span class='fontMedio'> dance seriously </span>";
+const en_bailarEnSerio = "<span class='fontGrande'>Learn to </span><span class='fontMedio'> dance seriously </span>";
 
 const es_dominarCuerpo = "<span class='fontGrande'>Aprendé</span> <span class='fontMedio'>a dominar tu cuerpo, <br/>"+
 							"a escuchar la música, <br /> "+
 							"a seguirla  <br />"+
 							"y sobre todo <br />"+
 							"a hacer sentir bien a tu pareja. </span>";
-const en_dominarCuerpo = "<span class='fontGrande'>Learn to</span><span class='fontMedio'> master your body, <br />"+ 
+const en_dominarCuerpo = "<span class='fontGrande'>Learn to </span><span class='fontMedio'> master your body, <br />"+ 
 						 "listen to the music, <br />"+
 						  "follow it, <br />"+ 
 						  "and above all, <br />"+
 						  "to make your partner feel good. </span>";
 
-const es_pararteBien = "<span class='fontGrande'>Learn to</span><span class='fontMedio'>a pararte bien, <br/>"+
+const es_pararteBien = "<span class='fontGrande'>Learn to </span><span class='fontMedio'>a pararte bien, <br/>"+
 							"a caminar y a desplazarte correctamente,<br/>"+
 							"a pivotear en giro con tus metatarsos y cadera,<br/>"+
 							"a disociar el movimiento de tu torso.<br/>"+
 							"Todo te ayudara a flexibilizar tu cuerpo.</span>";
-const en_pararteBien = "<span class='fontGrande'>Learn to</span><span class='fontMedio'> stand up straight, <br />"+
+const en_pararteBien = "<span class='fontGrande'>Learn to </span><span class='fontMedio'> stand up straight, <br />"+
 							"walk and move correctly, <br/>"+
 							"pivot in a turn with your metatarsals and hip<br/>"+
 							"dissociate the movement of your torso.<br/>"+
 							"Every thing will help you to make your body more flexible </span>";
 
-const es_abrazo = "<span class='fontGrande'>Learn to</span><span class='fontMedio'>a marcar un abrazo firme, <br />"+
+const es_abrazo = "<span class='fontGrande'>Learn to </span><span class='fontMedio'>a marcar un abrazo firme, <br />"+
 				"y ala vez flexible</span>";
-const en_abrazo = "<span class='fontGrande'>Learn to</span><span class='fontMedio'>give a firm embrace<br />"+
+const en_abrazo = "<span class='fontGrande'>Learn to </span><span class='fontMedio'>give a firm embrace<br />"+
 			"and flexible at the same time</span>";
 
 
-const es_memorizar = "<span class='fontGrande'>Learn to</span><span class='fontMedio'>a no memorizar figuras, <br/>"+
+const es_memorizar = "<span class='fontGrande'>Learn to </span><span class='fontMedio'>a no memorizar figuras, <br/>"+
 			"sino simplemente usarlas.</span>";
-const en_memorizar = "<span class='fontGrande'>Learn to</span> <span class='fontMedio'>no memorize figures, <br/>"+
+const en_memorizar = "<span class='fontGrande'>Learn to </span> <span class='fontMedio'>no memorize figures, <br/>"+
 			"but simply to use them without thinking.</span>";
 
-const es_ganchos = "<span class='fontGrande'>Learn to</span> <span class='fontMedio'>a usar ganchos y sacadas, <br/>"+
+const es_ganchos = "<span class='fontGrande'>Learn to </span> <span class='fontMedio'>a usar ganchos y sacadas, <br/>"+
 			"pero solo en los momentos adecuados.</span>";
-const en_ganchos = "<span class='fontGrande'>Learn to</span><span class='fontMedio'>use ganchos and sacadas, <br/>"+
+const en_ganchos = "<span class='fontGrande'>Learn to </span><span class='fontMedio'>use ganchos and sacadas, <br/>"+
 			"but only at the right times</span>";
 
-const es_aft= "<span class='fontGrande'>Learn to</span><span class='fontMedio'>a asociar el movimiento a las ideas de <br />"+
+const es_aft= "<span class='fontGrande'>Learn to </span><span class='fontMedio'>a asociar el movimiento a las ideas de <br />"+
 				"agua, aire, tierra y fuego. </span>";
-const en_aft= "<span class='fontGrande'>Learn to</span><span class='fontMedio'>associate movement with the ideas of <br/>"+
+const en_aft= "<span class='fontGrande'>Learn to </span><span class='fontMedio'>associate movement with the ideas of <br/>"+
 				"water, air, earth, and fire.</span>";
 
 			
 
-const es_sali = "<span class='fontGrande'>Salí a bailar</span> <span class='fontMedio'>"+
+const es_sali = "<span class='fontGrande'>Salí a bailar </span> <span class='fontMedio'>"+
 					"pensando que tu baile <br/>"+	
 					"no es ni mejor ni peor que el de los demás. <br />"+
 					"Es diferente, especial y tal vez único.</span>";
-const en_sali = "<span class='fontGrande'>Go away dancing</span><span class='fontMedio'> <br />"+
+const en_sali = "<span class='fontGrande'>Go away dancing </span><span class='fontMedio'> <br />"+
 					"with the understanding that your dance <br/>"+
 					"is neither better nor worse than anyone else's. <br/>"+
 					"It's different, special, and perhaps unique."+
@@ -539,7 +539,7 @@ const en_sali = "<span class='fontGrande'>Go away dancing</span><span class='fon
 const es_aprenderTango = "<span class='fontGrande'>Aprender a bailar tango en serio</span>"+
 							"<span class='fontMedio'>"+
 							"es un camino de ida sin regreso</span>";
-const en_aprenderTango = "<span class='fontGrande'>Learn to dance Tango seriusly</span><span class='fontMedio'>"+
+const en_aprenderTango = "<span class='fontGrande'>Learn to dance Tango seriusly </span><span class='fontMedio'>"+
 							"is a one-way street with no return.</span>";
 
 
