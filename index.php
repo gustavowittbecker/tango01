@@ -9,7 +9,8 @@
 
 <style>
 	* {	font-family: Garamond, serif;
-		color:dimgray;font-size:16px;
+		color:dimgray;
+		font-size:14px;
 		margin:0;
 		padding:0;
 		box-sizing: border-box;
@@ -80,7 +81,7 @@
 
 	/*Estilos para el documento de base*/
 
-	div.encabezado{width:100%;height:20%;background-image: url("./imagenes/fluido02.jpg");
+	div.encabezado{display:flex;justify-content:center;width:100%;height:20%;background-image: url("./imagenes/fluido02.jpg");
 		background-repeat: no-repeat;background-size: cover; background-position: center} /*Contenedor fijo ocupando el 20%*/
 
 
@@ -93,12 +94,12 @@
 
 	.accion {cursor:pointer;height:200px;display:flex;justify-content:center;background-Color:blue}
 
-	h1 {font-size:6em;text-align: center;}
-	h2 {font-size:3em;text-align: center;}
-	h3 {font-size:2em;text-align: left;}
-
+		h1 {font-size:6em;text-align: center;}
+		h2 {font-size:4em;text-align: center;}
+		h3 {font-size:2em;text-align: center;}
+		h3 {font-size:1em;text-align: center;}
 	
-	.fontGrande{font-size:22px} /*Para aplicar a un span por ejemplo*/
+	
 	
 	img {	
 	    max-width: 100%; /*Ancho libre permitiendo al navegador calcularla en base o otros paramentros 
@@ -107,7 +108,7 @@
 	}
 
 
-	div.aparte{clear:both;height:100px;background-color:white}
+	div.aparte{clear:both;height:150px;background-color:white}
 
 	div.enlace{clear:both;height:40px;}
 	div.enlace a {font-size:2em}
@@ -120,6 +121,23 @@
 
 	h2.enlace1{cursor:pointer}
 
+	.fontTitulo {
+		font-size: 72px
+	}
+	
+	.fontGrande {
+		font-size: 36px; 
+	}
+
+	.fontMedio { 
+		font-size: 18px;
+	}
+
+	.fontChico{
+		font-size: 12px;
+	}
+
+
 
 </style>
 
@@ -127,7 +145,11 @@
 
 <body>
 
-	<div class="encabezado"><h1>Tango en Buenos Aires</h1>
+	<div class="encabezado">
+		<div >
+			<span class="fontGrande">Tango</span>
+			<span class="fontMedio">en Buenos Aires</span>
+		</div>
 	</div>
 
 
@@ -176,6 +198,7 @@
 				<h2 id="textoPararteBien"></h2>
 			</div>
 		</div>
+
 
 		<div class="aparte"></div>
 		<div class="aparte"></div>
@@ -235,6 +258,7 @@
 			</div>
 
 			<div class="contenedorPorTercio" >
+				<img id="idPrendeTangoGanchos" src="./imagenes/iconoVideo.png" />
 			</div>
 
 
@@ -248,6 +272,82 @@
 		<div class="aparte"></div>
 
 
+
+		<div class="bloque">
+			<div class="contenedorPorTercio" >
+				<div id="imgAft" class="accion" >
+					<img src="./imagenes/tangofuego01.jpeg">
+				</div>
+			</div>
+
+			<div class="contenedorPorTercio" >
+				<img id="idPrendeTangoAft" src="./imagenes/iconoVideo.png" />
+			</div>
+
+
+			<div class="contenedorPorTercio" >
+				<h2 id="textoAft"></h2>
+			</div>
+		</div>
+
+
+		<div class="aparte"></div>
+		<div class="aparte"></div>
+
+
+		<div class="bloque">
+			<div class="contenedorPorTercio" >
+				<div id="imgSali" class="accion" >
+					<img src="./imagenes/unico02.png">
+				</div>
+			</div>
+
+			<div class="contenedorPorTercio" >
+				<img id="idPrendeTangoSali" src="./imagenes/iconoVideo.png" />
+			</div>
+
+
+			<div class="contenedorPorTercio" >
+				<h2 id="textoSali"></h2>
+			</div>
+		</div>
+
+
+
+
+
+
+		<div class="aparte"></div>
+		<div class="aparte"></div>
+
+
+
+		
+		<div class="bloque">
+			<div class="contenedorPorTercio" >
+				<div id="imgSali" class="accion" >
+					<img src="" />
+				</div>
+			</div>
+
+			<div class="contenedorPorTercio" >
+				<img id="idPrendeTangoSali" src="./imagenes/tangoDrawing.jpeg" />
+			</div>
+
+
+			<div class="contenedorPorTercio" >
+				<h2 id="textoAprenderTango"></h2>
+			</div>
+		</div>
+		
+
+
+		<div class="aparte"></div>
+		<div class="aparte"></div>
+
+
+
+<!--Datos Wittbecker -->
 
 
 		<hr/>
@@ -283,7 +383,7 @@
 
 
 
-<!--ventana modal 1 -->
+<!--ventana modal -->
 
 <div id="ventanaModal" class="ventanaModalApagada">   <!--ventana modal 1-->
 	<div id="encabezadoModal" class="encabezadoModal" >
@@ -294,7 +394,7 @@
 		<!--<div id="peli" class="videos"></div>-->
 	</div>
 
-</div> <!--cierra ventanaModal-->
+</div> <!--cierra ventana Modal-->
 
 
 
@@ -342,6 +442,31 @@ document.getElementById("idPrendeTangoMemoria").addEventListener("click", functi
 });
 
 
+document.getElementById("idPrendeTangoGanchos").addEventListener("click", function() {
+	alert("Prender video");
+	document.getElementById("ventanaModal").className="ventanaModalPrendida";
+	document.getElementById("peli").innerHTML = "<iframe width='100%' height='100%' src=''>";	
+});
+
+document.getElementById("idPrendeTangoAft").addEventListener("click", function() {
+	alert("Prender video");
+	document.getElementById("ventanaModal").className="ventanaModalPrendida";
+	document.getElementById("peli").innerHTML = "<iframe width='100%' height='100%' src=''>";	
+});
+
+document.getElementById("idPrendeTangoSali").addEventListener("click", function() {
+	alert("Prender video");
+	document.getElementById("ventanaModal").className="ventanaModalPrendida";
+	document.getElementById("peli").innerHTML = "<iframe width='100%' height='100%' src=''>";	
+});
+
+
+
+
+
+
+
+
 
 document.getElementById("btCruz").addEventListener("click", function() {
 	document.getElementById("ventanaModal").className="ventanaModalApagada";
@@ -351,59 +476,59 @@ document.getElementById("btCruz").addEventListener("click", function() {
 
 /*Traducción*/
 
-const es_bailarEnSerio = "Aprendé <span class='fontGrande'>a bailar en serio</span>";
-const en_bailarEnSerio = "Learn to <span class='fontGrande'> dance seriously </span>";
+const es_bailarEnSerio = "<span class='fontGrande'>Aprendé</span><span class='fontMedio'>a bailar en serio</span>";
+const en_bailarEnSerio = "<span class='fontGrande'>Learn to</span><span class='fontMedio'> dance seriously </span>";
 
-const es_dominarCuerpo = "Aprendé <span class='fontGrande'>a dominar tu cuerpo, <br/>"+
+const es_dominarCuerpo = "<span class='fontGrande'>Aprendé</span> <span class='fontMedio'>a dominar tu cuerpo, <br/>"+
 							"a escuchar la música, <br /> "+
 							"a seguirla  <br />"+
 							"y sobre todo <br />"+
 							"a hacer sentir bien a tu pareja. </span>";
-const en_dominarCuerpo = "Learn to <span class='fontGrande'> master your body, <br />"+ 
+const en_dominarCuerpo = "<span class='fontGrande'>Learn to</span><span class='fontMedio'> master your body, <br />"+ 
 						 "listen to the music, <br />"+
 						  "follow it, <br />"+ 
 						  "and above all, <br />"+
 						  "to make your partner feel good. </span>";
 
-const es_pararteBien = "Aprendé <span class='fontGrande'>a pararte bien, <br/>"+
+const es_pararteBien = "<span class='fontGrande'>Learn to</span><span class='fontMedio'>a pararte bien, <br/>"+
 							"a caminar y a desplazarte correctamente,<br/>"+
 							"a pivotear en giro con tus metatarsos y cadera,<br/>"+
 							"a disociar el movimiento de tu torso.<br/>"+
 							"Todo te ayudara a flexibilizar tu cuerpo.</span>";
-const en_pararteBien = "Learn to  <span class='fontGrande'> stand up straight, <br />"+
+const en_pararteBien = "<span class='fontGrande'>Learn to</span><span class='fontMedio'> stand up straight, <br />"+
 							"walk and move correctly, <br/>"+
 							"pivot in a turn with your metatarsals and hip<br/>"+
 							"dissociate the movement of your torso.<br/>"+
 							"Every thing will help you to make your body more flexible </span>";
 
-const es_abrazo = "Aprendé <span class='fontGrande'>a marcar un abrazo firme, <br />"+
+const es_abrazo = "<span class='fontGrande'>Learn to</span><span class='fontMedio'>a marcar un abrazo firme, <br />"+
 				"y ala vez flexible</span>";
-const en_abrazo = "Learn to <span class='fontGrande'>give a firm embrace<br />"+
+const en_abrazo = "<span class='fontGrande'>Learn to</span><span class='fontMedio'>give a firm embrace<br />"+
 			"and flexible at the same time</span>";
 
 
-const es_memorizar = "Aprendé <span class='fontGrande'>a no memorizar figuras, <br/>"+
+const es_memorizar = "<span class='fontGrande'>Learn to</span><span class='fontMedio'>a no memorizar figuras, <br/>"+
 			"sino simplemente usarlas.</span>";
-const en_memorizar = "Learn not to <span class='fontGrande'>memorize figures, <br/>"+
+const en_memorizar = "<span class='fontGrande'>Learn to</span> <span class='fontMedio'>no memorize figures, <br/>"+
 			"but simply to use them without thinking.</span>";
 
-const es_ganchos = "Aprendé <span class='fontGrande'>a usar ganchos y sacadas, <br/>"+
+const es_ganchos = "<span class='fontGrande'>Learn to</span> <span class='fontMedio'>a usar ganchos y sacadas, <br/>"+
 			"pero solo en los momentos adecuados.</span>";
-const en_ganchos = "Learn to <span class='fontGrande'>use ganchos and sacadas, <br/>"+
+const en_ganchos = "<span class='fontGrande'>Learn to</span><span class='fontMedio'>use ganchos and sacadas, <br/>"+
 			"but only at the right times</span>";
 
-const es_aft= "Aprendé <span class='fontGrande'>a asociar el movimiento a las ideas de <br />"+
+const es_aft= "<span class='fontGrande'>Learn to</span><span class='fontMedio'>a asociar el movimiento a las ideas de <br />"+
 				"agua, aire, tierra y fuego. </span>";
-const en_aft= "Learn to <span class='fontGrande'>associate movement with the ideas of <br/>"+
+const en_aft= "<span class='fontGrande'>Learn to</span><span class='fontMedio'>associate movement with the ideas of <br/>"+
 				"water, air, earth, and fire.</span>";
 
 			
 
-const es_sali = "Sali a bailar <span class='fontGrande'>"+
+const es_sali = "<span class='fontGrande'>Salí a bailar</span> <span class='fontMedio'>"+
 					"pensando que tu baile <br/>"+	
 					"no es ni mejor ni peor que el de los demás. <br />"+
 					"Es diferente, especial y tal vez único.</span>";
-const en_sali = "Go away dancing <span class='fontGrande'> <br />"+
+const en_sali = "<span class='fontGrande'>Go away dancing</span><span class='fontMedio'> <br />"+
 					"with the understanding that your dance <br/>"+
 					"is neither better nor worse than anyone else's. <br/>"+
 					"It's different, special, and perhaps unique."+
@@ -411,10 +536,10 @@ const en_sali = "Go away dancing <span class='fontGrande'> <br />"+
 
 
 
-const es_aprenderTango = "Aprender a bailar tango en serio <br />"+
-							"<span class='fontGrande'>"+
+const es_aprenderTango = "<span class='fontGrande'>Aprender a bailar tango en serio</span>"+
+							"<span class='fontMedio'>"+
 							"es un camino de ida sin regreso</span>";
-const en_aprenderTango = "Learn to dance Tango seriusly <br /><span class='fontGrande'>"+
+const en_aprenderTango = "<span class='fontGrande'>Learn to dance Tango seriusly</span><span class='fontMedio'>"+
 							"is a one-way street with no return.</span>";
 
 
@@ -428,6 +553,10 @@ let lenguaje = window.navigator.languages; //Es un array
 /*document.getElementById("demo").innerHTML = lenguaje[0]; */
 
 //alert(lenguaje[0]);
+
+
+//<h2> Asignacion de textos condicional al idioma del navegador
+
 
 if (lenguaje[0]=="es-ES") {
 	//alert("español");
@@ -449,9 +578,9 @@ else if (lenguaje[0]=="en") {
 	document.getElementById("textoAbrazo").innerHTML = en_abrazo;
 	document.getElementById("textoMemorizar").innerHTML = en_memorizar;
 	document.getElementById("textoGanchos").innerHTML = en_ganchos;
-	//document.getElementById("textoAft").innerHTML = en_aft;
-	//document.getElementById("textoSali").innerHTML = en_sali;
-	//document.getElementById("textoAprenderTango").innerHTML = en_aprenderTango;
+	document.getElementById("textoAft").innerHTML = en_aft;
+	document.getElementById("textoSali").innerHTML = en_sali;
+	document.getElementById("textoAprenderTango").innerHTML = en_aprenderTango;
 }
 
 
