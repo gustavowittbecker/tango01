@@ -153,8 +153,6 @@
 
 
 	<div class="contenedorGlobal">
-		
-		<div class="aparte"></div>
 
 		<hr />		
 		<h2 id="bailarEnSerio"></h2>		
@@ -415,7 +413,7 @@
 document.getElementById("idPrendeDominarCuerpo").addEventListener("click", function() {
 	//alert("Prender video");
 	document.getElementById("ventanaModal").className="ventanaModalPrendida";
-	document.getElementById("peli").innerHTML = "<iframe width='100%' height='100%' src='./videos/gusMirta01.m4v'>";	
+	document.getElementById("peli").innerHTML = "<iframe width='100%' height='100%' src='./videos/gusMirta01.mp4'>";	
 });
 
 
@@ -436,7 +434,7 @@ document.getElementById("idPrendeAbrazo").addEventListener("click", function() {
 document.getElementById("idPrendeTangoMemoria").addEventListener("click", function() {
 	//alert("Prender video");
 	document.getElementById("ventanaModal").className="ventanaModalPrendida";
-	document.getElementById("peli").innerHTML = "<iframe width='100%' height='100%' src='./videos/GanchoPos8Adelante.m4v'>";	
+	document.getElementById("peli").innerHTML = "<iframe width='100%' height='100%' src='./videos/GanchoPos8Adelante.mp4'>";	
 });
 
 
