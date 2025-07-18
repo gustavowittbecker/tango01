@@ -102,8 +102,7 @@
 	
 	
 	img {	
-	    max-width: 100%; /*Ancho libre permitiendo al navegador calcularla en base o otros paramentros 
-		sin sobrepasar en ancho el tamaño de la caja*/
+	    max-width: 100%; /*Ancho libre permitiendo al navegador calcularla sin sobrepasar en ancho el tamaño de la caja*/
     	max-height: 100%;  
 	}
 
@@ -112,9 +111,9 @@
 
 	div.enlace{clear:both;height:40px;}
 	div.enlace a {font-size:2em}
-	div.contenedorPorTercio{width:33%;height:250px;/*border-style:solid;*/float:left;display:flex;align-items:center}
-	div.contenedorPorMedio{float:left;width:50%;height:250px;display:flex;justify-content:center;/*background-color:blue;*/align-items:center}
-	div.contenedorPorDosTercios{width:66%;height:250px;/*border-style:solid;*/float:left;display:flex;align-items:center}
+	div.contenedorPorTercio{display:flex;float:left;width:33%;height:250px;justify-content:center;align-items:center;}/*border-style:solid;*/
+	div.contenedorPorMedio{display:flex;float:left;width:50%;height:250px;justify-content:center;align-items:center}
+	div.contenedorPorDosTercios{display:flex;float:left;width:66%;height:250px;justify-content:center;align-items:center}
 	
 
 	div.bloque{display:block}
@@ -130,7 +129,7 @@
 	}
 
 	.fontMedio { 
-		font-size: 18px;
+		font-size: 22px;
 	}
 
 	.fontChico{
@@ -185,13 +184,13 @@
 	
 		<div class="bloque">
 			<div class="contenedorPorTercio" >
-				<div id="imgPararteBien" class="accion" >
+				<div id="imgPararteBien" >
 					<img src="./imagenes/parejaTango1.jpeg">
 				</div>
 			</div>
 
 			<div class="contenedorPorTercio" >
-				<img id="idPrendePararteBien" src="./imagenes/iconoVideo.png" />
+				<img id="idPrendePararteBien" src="./imagenes/iconoVideo.png" class="accion"/>
 			</div>
 
 			<div class="contenedorPorTercio" >
@@ -206,13 +205,13 @@
 
 		<div class="bloque">
 			<div class="contenedorPorTercio" >
-				<div id="imgAbrazo" class="accion" >
+				<div id="imgAbrazo" >
 					<img src="./imagenes/abrazo01.png">
 				</div>
 			</div>
 
 			<div class="contenedorPorTercio" >
-				<img id="idPrendeAbrazo" src="./imagenes/iconoVideo.png" />
+				<img id="idPrendeAbrazo" src="./imagenes/iconoVideo.png" class="accion" />
 			</div>
 
 			<div class="contenedorPorTercio" >
@@ -229,15 +228,14 @@
 
 		<div class="bloque">
 			<div class="contenedorPorTercio" >
-				<div id="imgMemoria" class="accion" >
-					<img src="./imagenes/tangoMemoria01.jpeg">
+				<div id="imgMemoria" >
+					<img src="./imagenes/tangoMemoria03.png">
 				</div>
 			</div>
 
 			<div class="contenedorPorTercio" >
-				<img id="idPrendeTangoMemoria" src="./imagenes/iconoVideo.png" />
+				<img id="idPrendeTangoMemoria" src="./imagenes/iconoVideo.png"  class="accion"/>
 			</div>
-
 
 			<div class="contenedorPorTercio" >
 				<h2 id="textoMemorizar"></h2>
@@ -252,13 +250,13 @@
 
 		<div class="bloque">
 			<div class="contenedorPorTercio" >
-				<div id="imgGancho" class="accion" >
+				<div id="imgGancho"  >
 					<img src="./imagenes/tangoGancho02.jpeg">
 				</div>
 			</div>
 
 			<div class="contenedorPorTercio" >
-				<img id="idPrendeTangoGanchos" src="./imagenes/iconoVideo.png" />
+				<img id="idPrendeTangoGanchos" src="./imagenes/iconoVideo.png" class="accion"/>
 			</div>
 
 
@@ -275,13 +273,13 @@
 
 		<div class="bloque">
 			<div class="contenedorPorTercio" >
-				<div id="imgAft" class="accion" >
+				<div id="imgAft" >
 					<img src="./imagenes/tangofuego01.jpeg">
 				</div>
 			</div>
 
 			<div class="contenedorPorTercio" >
-				<img id="idPrendeTangoAft" src="./imagenes/iconoVideo.png" />
+				<img id="idPrendeTangoAft" src="./imagenes/iconoVideo.png" class="accion" />
 			</div>
 
 
@@ -297,13 +295,13 @@
 
 		<div class="bloque">
 			<div class="contenedorPorTercio" >
-				<div id="imgSali" class="accion" >
+				<div id="imgSali" >
 					<img src="./imagenes/unico02.png">
 				</div>
 			</div>
 
 			<div class="contenedorPorTercio" >
-				<img id="idPrendeTangoSali" src="./imagenes/iconoVideo.png" />
+				<img id="idPrendeTangoSali" src="./imagenes/iconoVideo.png" class="accion" />
 			</div>
 
 
@@ -325,13 +323,13 @@
 		
 		<div class="bloque">
 			<div class="contenedorPorTercio" >
-				<div id="imgSali" class="accion" >
+				<div id="imgSali" >
 					<img src="" />
 				</div>
 			</div>
 
 			<div class="contenedorPorTercio" >
-				<img id="idPrendeTangoSali" src="./imagenes/tangoDrawing.jpeg" />
+				<img id="idPrendeTangoSali" src="./imagenes/tangoDrawing.jpeg" class="accion" />
 			</div>
 
 
@@ -358,7 +356,7 @@
 					<img src="./imagenes/wahtsapp01.png" />
 				</div>
 				<div class="contenedorPorDosTercios" >
-					&nbsp;<span class="fontGrande">15 65069142 (Gustavo)</span>
+					&nbsp;<span class="fontMedio">15 65069142 (Gustavo)</span>
 				</div>
 			</div>
 			
@@ -367,7 +365,7 @@
 					<img src="./imagenes/gmail01.png" />
 				</div>
 				<div class="contenedorPorDosTercios">
-					&nbsp;<span class="fontGrande">gwittbeckertango@gmail.com</span>
+					&nbsp;<span class="fontMedio">gwittbeckertango@gmail.com</span>
 				</div>
 			</div>
 
@@ -476,10 +474,10 @@ document.getElementById("btCruz").addEventListener("click", function() {
 
 /*Traducción*/
 
-const es_bailarEnSerio = "<span class='fontGrande'>Aprendé</span><span class='fontMedio'>a bailar en serio</span>";
+const es_bailarEnSerio = "<span class='fontGrande'>Aprendé </span><span class='fontMedio'>a bailar en serio</span>";
 const en_bailarEnSerio = "<span class='fontGrande'>Learn to </span><span class='fontMedio'> dance seriously </span>";
 
-const es_dominarCuerpo = "<span class='fontGrande'>Aprendé</span> <span class='fontMedio'>a dominar tu cuerpo, <br/>"+
+const es_dominarCuerpo = "<span class='fontGrande'>Aprendé </span> <span class='fontMedio'>a dominar tu cuerpo, <br/>"+
 							"a escuchar la música, <br /> "+
 							"a seguirla  <br />"+
 							"y sobre todo <br />"+
@@ -490,7 +488,7 @@ const en_dominarCuerpo = "<span class='fontGrande'>Learn to </span><span class='
 						  "and above all, <br />"+
 						  "to make your partner feel good. </span>";
 
-const es_pararteBien = "<span class='fontGrande'>Learn to </span><span class='fontMedio'>a pararte bien, <br/>"+
+const es_pararteBien = "<span class='fontGrande'>Aprendé </span><span class='fontMedio'>a pararte bien, <br/>"+
 							"a caminar y a desplazarte correctamente,<br/>"+
 							"a pivotear en giro con tus metatarsos y cadera,<br/>"+
 							"a disociar el movimiento de tu torso.<br/>"+
@@ -501,23 +499,23 @@ const en_pararteBien = "<span class='fontGrande'>Learn to </span><span class='fo
 							"dissociate the movement of your torso.<br/>"+
 							"Every thing will help you to make your body more flexible </span>";
 
-const es_abrazo = "<span class='fontGrande'>Learn to </span><span class='fontMedio'>a marcar un abrazo firme, <br />"+
+const es_abrazo = "<span class='fontGrande'>Aprendé </span><span class='fontMedio'>a marcar un abrazo firme, <br />"+
 				"y ala vez flexible</span>";
 const en_abrazo = "<span class='fontGrande'>Learn to </span><span class='fontMedio'>give a firm embrace<br />"+
 			"and flexible at the same time</span>";
 
 
-const es_memorizar = "<span class='fontGrande'>Learn to </span><span class='fontMedio'>a no memorizar figuras, <br/>"+
+const es_memorizar = "<span class='fontGrande'>Aprendé </span><span class='fontMedio'>a no memorizar figuras, <br/>"+
 			"sino simplemente usarlas.</span>";
 const en_memorizar = "<span class='fontGrande'>Learn to </span> <span class='fontMedio'>no memorize figures, <br/>"+
 			"but simply to use them without thinking.</span>";
 
-const es_ganchos = "<span class='fontGrande'>Learn to </span> <span class='fontMedio'>a usar ganchos y sacadas, <br/>"+
+const es_ganchos = "<span class='fontGrande'>Aprende </span> <span class='fontMedio'>a usar ganchos y sacadas, <br/>"+
 			"pero solo en los momentos adecuados.</span>";
 const en_ganchos = "<span class='fontGrande'>Learn to </span><span class='fontMedio'>use ganchos and sacadas, <br/>"+
 			"but only at the right times</span>";
 
-const es_aft= "<span class='fontGrande'>Learn to </span><span class='fontMedio'>a asociar el movimiento a las ideas de <br />"+
+const es_aft= "<span class='fontGrande'>Aprendé </span><span class='fontMedio'>a asociar el movimiento a las ideas de <br />"+
 				"agua, aire, tierra y fuego. </span>";
 const en_aft= "<span class='fontGrande'>Learn to </span><span class='fontMedio'>associate movement with the ideas of <br/>"+
 				"water, air, earth, and fire.</span>";
@@ -536,7 +534,7 @@ const en_sali = "<span class='fontGrande'>Go away dancing </span><span class='fo
 
 
 
-const es_aprenderTango = "<span class='fontGrande'>Aprender a bailar tango en serio</span>"+
+const es_aprenderTango = "<span class='fontGrande'>Aprender a bailar tango en serio </span>"+
 							"<span class='fontMedio'>"+
 							"es un camino de ida sin regreso</span>";
 const en_aprenderTango = "<span class='fontGrande'>Learn to dance Tango seriusly </span><span class='fontMedio'>"+
