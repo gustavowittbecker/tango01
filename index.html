@@ -15,6 +15,11 @@
 		padding:0;
 		box-sizing: border-box;
 	}
+
+	img {
+		width:80%;
+		max-width:100%;
+	}
 	html {height:100%}
 	body {height:100%} /*va a ser el contenedor principal*/
 
@@ -24,10 +29,10 @@
 
 	div.ventanaModalApagada { /*Esta ventana se abrira en una determinada posicion*/
 		position:fixed;
-		left:18%;
-		top:18%;
-		width:40%;
-		height:60%;
+		left:0;
+		top:0%;
+		width:50%;
+		/*height:50%;*/
 		background-color:yellow; /*solo para ver como va quedando*/
 		color:black;
 		z-index:1;
@@ -37,10 +42,10 @@
 	
 	div.ventanaModalPrendida {
 		position:fixed;
-		left:18%;
-		top:18%;		
-		width:40%;
-		height:60%;	
+		left:0;
+		top:0%;		
+		width:50%;
+		/*height:80%;	*/
 		background-color:yellow;
 		color:black;
 		z-index:1;
@@ -56,6 +61,7 @@
 	}
 
 	div.btCruz { /*Para cerrar las ventanas modales*/
+		position:relative;
 		color:red;
 		width:10%;
 		height:100%;
@@ -68,7 +74,8 @@
 	}
 
 
-	div.contenidoModal { /*Aqui insertara el iframe con el video que corresponda */ 
+	div.contenidoModal { /*Aqui insertara el video que corresponda */ 
+		position:relative;
 		width:100%;
 		height:90%;
 		background-color: lightblue;
@@ -92,14 +99,8 @@
 				width:100%;
 				overflow-y:scroll} /*Contenedor scroleable*/
 
-	.accion {cursor:pointer;height:200px;display:flex;justify-content:center;background-Color:blue}
+	img.accion {cursor:pointer;width:40%} /*Las imagenes usadas como links ocupan la mitad de su contenedor.*/
 
-		h1 {font-size:1em;text-align: center;}
-		h2 {font-size:1em;text-align: center;}
-		h3 {font-size:1em;text-align: center;}
-		h3 {font-size:1em;text-align: center;}
-	
-	
 	
 	img {	
 	    max-width: 100%; /*Ancho libre permitiendo al navegador calcularla sin sobrepasar en ancho el tamaño de la caja*/
@@ -109,11 +110,11 @@
 
 	div.aparte{clear:both;height:150px;background-color:white}
 
-	div.enlace{clear:both;height:40px;}
-	div.enlace a {font-size:1em}
-	div.contenedorPorTercio{display:flex;float:left;width:33%;height:250px;justify-content:center;align-items:center;}/*border-style:solid;*/
-	div.contenedorPorMedio{display:flex;float:left;width:50%;height:250px;justify-content:center;align-items:center}
-	div.contenedorPorDosTercios{display:flex;float:left;width:66%;height:250px;justify-content:center;align-items:center}
+	/*div.enlace{clear:both;height:10%;}
+	div.enlace a {font-size:1em}*/
+	div.contenedorPorTercio{display:flex;float:left;width:33%;justify-content:center;align-items:center;}/*border-style:solid;*/
+	div.contenedorPorMedio{display:flex;float:left;width:50%;justify-content:center;align-items:center}
+	div.contenedorPorDosTercios{display:flex;float:left;width:66%;justify-content:center;align-items:center}
 	
 
 	div.bloque{display:block}
@@ -136,7 +137,23 @@
 		font-size: 2em;
 	}
 
+@media (max-width: 600px) {
+  .fontTitulo {
+		font-size: 3em;
+	}
+	
+	.fontGrande {
+		font-size: 2em; 
+	}
 
+	.fontMedio { 
+		font-size: 1.5em;
+	}
+
+	.fontChico{
+		font-size: 1em;
+	}
+}
 
 </style>
 
@@ -168,7 +185,7 @@
 			</div>
 
 			<div class="contenedorPorTercio" >
-				<img id="idPrendeDominarCuerpo" class="accion" src="./imagenes/iconoVideo.png" />
+				<img id="idPrendeDominarCuerpo"  src="./imagenes/iconoVideo.png" class="accion" />
 			</div>
 
 			<div class="contenedorPorTercio" >
@@ -183,7 +200,7 @@
 		<div class="bloque">
 			<div class="contenedorPorTercio" >
 				<div id="imgPararteBien" >
-					<img src="./imagenes/parejaTango1.jpeg">
+					<img src="./imagenes/parejaTango1.jpeg" class="accion">
 				</div>
 			</div>
 
@@ -351,16 +368,16 @@
 		<div style="display:flex;background-color:white;color:black">
 			<div class="contenedorPorTercio" >
 				<div class="contenedorPorTercio" >
-					<img src="./imagenes/wahtsapp01.png" />
+					<img style="display:block" src="./imagenes/wahtsapp01.png" />
 				</div>
 				<div class="contenedorPorDosTercios" >
 					&nbsp;<span class="fontMedio">15 65069142 (Gustavo)</span>
 				</div>
 			</div>
 			
-			<div class="contenedorPorTercio" >
+			<div class="contenedorPorDosTercios" >
 				<div class="contenedorPorTercio" >
-					<img src="./imagenes/gmail01.png" />
+					<img style="display:block"  src="./imagenes/gmail01.png" />
 				</div>
 				<div class="contenedorPorDosTercios">
 					&nbsp;<span class="fontMedio">gwittbeckertango@gmail.com</span>
@@ -383,11 +400,11 @@
 
 <div id="ventanaModal" class="ventanaModalApagada">   <!--ventana modal 1-->
 	<div id="encabezadoModal" class="encabezadoModal">
-		<span style="font-size:32px">Video</span>
+		<span style="font-size:3em">Video</span>
 		<div id="btCruz" class="btCruz">X</div>
 	</div>
-	<div id="peli" class="contenidoModal">
-		<video id="idVideo" height="100%"  src=""></video>
+	<div  class="contenidoModal">
+		<video id="idVideo" style="height:100%;width: 100%;"  src=""></video>
 	</div>
 
 </div> <!--cierra ventana Modal-->
@@ -515,25 +532,25 @@ const en_abrazo = "<span class='fontGrande'>Learn to </span><span class='fontMed
 			"and flexible at the same time</span>";
 
 
-const es_memorizar = "<span class='fontGrande'>Aprendé </span><span class='fontMedio'>a no memorizar figuras, <br/>"+
+const es_memorizar = "<span class='fontGrande'>Aprendé </span><span class='fontMedio'><br />a no memorizar figuras, <br/>"+
 			"sino simplemente usarlas.</span>";
-const en_memorizar = "<span class='fontGrande'>Learn to </span> <span class='fontMedio'>no memorize figures, <br/>"+
+const en_memorizar = "<span class='fontGrande'>Learn to </span> <span class='fontMedio'><br />no memorize figures, <br/>"+
 			"but simply to use them without thinking.</span>";
 
-const es_ganchos = "<span class='fontGrande'>Aprende </span> <span class='fontMedio'>a usar ganchos y sacadas, <br/>"+
+const es_ganchos = "<span class='fontGrande'>Aprendé </span> <span class='fontMedio'><br />a usar ganchos y sacadas, <br/>"+
 			"pero solo en los momentos adecuados.</span>";
-const en_ganchos = "<span class='fontGrande'>Learn to </span><span class='fontMedio'>use ganchos and sacadas, <br/>"+
+const en_ganchos = "<span class='fontGrande'>Learn to </span><span class='fontMedio'><br />use ganchos and sacadas, <br/>"+
 			"but only at the right times</span>";
 
-const es_aft= "<span class='fontGrande'>Aprendé </span><span class='fontMedio'>a asociar el movimiento a las ideas de <br />"+
+const es_aft= "<span class='fontGrande'>Aprendé </span><span class='fontMedio'><br />a asociar el movimiento a las ideas de <br />"+
 				"agua, aire, tierra y fuego. </span>";
-const en_aft= "<span class='fontGrande'>Learn to </span><span class='fontMedio'>associate movement with the ideas of <br/>"+
+const en_aft= "<span class='fontGrande'>Learn to </span><span class='fontMedio'><br />associate movement with the ideas of <br/>"+
 				"water, air, earth, and fire.</span>";
 
 			
 
 const es_sali = "<span class='fontGrande'>Salí a bailar </span> <span class='fontMedio'>"+
-					"pensando que tu baile <br/>"+	
+					"<br />pensando que tu baile <br/>"+	
 					"no es ni mejor ni peor que el de los demás. <br />"+
 					"Es diferente, especial y tal vez único.</span>";
 const en_sali = "<span class='fontGrande'>Go away dancing </span><span class='fontMedio'> <br />"+
@@ -544,10 +561,10 @@ const en_sali = "<span class='fontGrande'>Go away dancing </span><span class='fo
 
 
 
-const es_aprenderTango = "<span class='fontGrande'>Aprender a bailar tango en serio </span>"+
+const es_aprenderTango = "<span class='fontGrande'>Aprender a bailar tango en serio <br /></span>"+
 							"<span class='fontMedio'>"+
 							"es un camino de ida sin regreso</span>";
-const en_aprenderTango = "<span class='fontGrande'>Learn to dance Tango seriusly </span><span class='fontMedio'>"+
+const en_aprenderTango = "<span class='fontGrande'>Learn to dance Tango seriusly <br /></span><span class='fontMedio'>"+
 							"is a one-way street with no return.</span>";
 
 
