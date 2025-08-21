@@ -10,7 +10,7 @@
 <style>
 	* {	font-family: Garamond, serif;
 		color:dimgray;
-		font-size:14px;
+		font-size:12px;
 		margin:0;
 		padding:0;
 		box-sizing: border-box;
@@ -94,9 +94,9 @@
 
 	.accion {cursor:pointer;height:200px;display:flex;justify-content:center;background-Color:blue}
 
-		h1 {font-size:6em;text-align: center;}
-		h2 {font-size:4em;text-align: center;}
-		h3 {font-size:2em;text-align: center;}
+		h1 {font-size:1em;text-align: center;}
+		h2 {font-size:1em;text-align: center;}
+		h3 {font-size:1em;text-align: center;}
 		h3 {font-size:1em;text-align: center;}
 	
 	
@@ -110,7 +110,7 @@
 	div.aparte{clear:both;height:150px;background-color:white}
 
 	div.enlace{clear:both;height:40px;}
-	div.enlace a {font-size:2em}
+	div.enlace a {font-size:1em}
 	div.contenedorPorTercio{display:flex;float:left;width:33%;height:250px;justify-content:center;align-items:center;}/*border-style:solid;*/
 	div.contenedorPorMedio{display:flex;float:left;width:50%;height:250px;justify-content:center;align-items:center}
 	div.contenedorPorDosTercios{display:flex;float:left;width:66%;height:250px;justify-content:center;align-items:center}
@@ -121,19 +121,19 @@
 	h2.enlace1{cursor:pointer}
 
 	.fontTitulo {
-		font-size: 72px
+		font-size: 6em;
 	}
 	
 	.fontGrande {
-		font-size: 36px; 
+		font-size: 4em; 
 	}
 
 	.fontMedio { 
-		font-size: 22px;
+		font-size: 1.5em;
 	}
 
 	.fontChico{
-		font-size: 12px;
+		font-size: 2em;
 	}
 
 
@@ -434,7 +434,7 @@ document.getElementById("idPrendeAbrazo").addEventListener("click", function() {
 document.getElementById("idPrendeTangoMemoria").addEventListener("click", function() {
 	//alert("Prender video");
 	document.getElementById("ventanaModal").className="ventanaModalPrendida";
-	document.getElementById("peli").innerHTML = "<iframe width='100%' height='100%' src='./videos/GanchoPos8Adelante.mp4'>";	
+	document.getElementById("peli").innerHTML = "<iframe width='100%' height='100%' src='./videos/giroConBarridaEn2Compases.mp4'>";	
 });
 
 
