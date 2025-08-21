@@ -168,7 +168,7 @@
 			</div>
 
 			<div class="contenedorPorTercio" >
-				<!--<img id="idPrendeDominarCuerpo" class="accion" src="./imagenes/iconoVideo.png" />-->
+				<img id="idPrendeDominarCuerpo" class="accion" src="./imagenes/iconoVideo.png" />
 			</div>
 
 			<div class="contenedorPorTercio" >
@@ -297,11 +297,11 @@
 					<img src="./imagenes/unico02.png">
 				</div>
 			</div>
-			
+
 			<div class="contenedorPorTercio" >
 				<img id="idPrendeTangoSali" src="./imagenes/iconoVideo.png" class="accion" />
 			</div>
-			
+
 
 			<div class="contenedorPorTercio" >
 				<h2 id="textoSali"></h2>
@@ -325,10 +325,11 @@
 					<img src="" />
 				</div>
 			</div>
+
 			<div class="contenedorPorTercio" >
 				<img id="idPrendeTangoSali" src="./imagenes/tangoDrawing.jpeg" class="accion" />
 			</div>
-			
+
 
 			<div class="contenedorPorTercio" >
 				<h2 id="textoAprenderTango"></h2>
@@ -386,7 +387,7 @@
 		<div id="btCruz" class="btCruz">X</div>
 	</div>
 	<div id="peli" class="contenidoModal">
-		<!--<div id="peli" class="videos"></div>-->
+		<iframe name="iframePeli" width="100%" height="100%" src="">
 	</div>
 
 </div> <!--cierra ventana Modal-->
@@ -404,15 +405,18 @@
 
 <script>
 
-
+alert("principio");;;
 
 /*Acciones al pulsar los links a videos*/
 
 
 document.getElementById("idPrendeDominarCuerpo").addEventListener("click", function() {
-	//alert("Prender video");
+	alert("Prender video");
+	/*
 	document.getElementById("ventanaModal").className="ventanaModalPrendida";
-	document.getElementById("peli").innerHTML = "<iframe width='100%' height='100%' src='./videos/gusMirta01.mp4'>";	
+	
+	document.getElementById("pepe").src = "./videos/gusMirta01.mp4";	
+	*/
 });
 
 
