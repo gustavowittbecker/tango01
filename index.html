@@ -29,43 +29,37 @@
 
 	div.ventanaModalApagada { /*Esta ventana se abrira en una determinada posicion*/
 		position:fixed;
-		left:0;
-		top:0%;
-		width:80%;
-		height:80%;
-		background-color:yellow; /*solo para ver como va quedando*/
-		color:black;
+		left:5%;
+		top:10%;
+		max-width:60%;
+		max-height:80%;
+		/*background-color:yellow; solo para ver como va quedando*/
+		/*color:black;*/
 		/*z-index:1;*/
-		overflow:hidden;
+		/*overflow:hidden;*/
 		visibility: hidden; /*Para elementos que estan pero no se ven*/
 	}
 	
 	div.ventanaModalPrendida {
 		position:fixed;
-		left:0;
-		top:0%;		
-		width:80%;
-		height:80%;	
-		background-color:yellow;
-		color:black;
+		left:5%;
+		top:10%;		
+		max-width:60%;
+		max-height:80%;	
+		/*background-color:yellow;*/
+		/*color:black;*/
 		/*z-index:1;*/
-		overflow:hidden;
+		/*overflow:hidden;*/
 		visibility: visible;
 	}
 
 	
-	div.encabezadoModal { /*Para encabezar el contenido de la vent modal*/
-		position:relative;
-		width:100%;
-		height:10%;
-		background-color:lightblue;
-	}
 
 	div.btCruz { /*Para cerrar las ventanas modales*/
 		position:relative;
 		color:red;
-		width:10%;
-		height:100%;
+		width:30px;
+		height:30px;
 		background-color: #BBBBBB;
 		float:right; /*Flota a la derecha de su contenedor padre*/
 		cursor:pointer;
@@ -75,15 +69,6 @@
 	}
 
 
-	div.contenidoModal { /*Aqui insertara el video que corresponda */ 
-		position:relative;
-		width:100%;
-		height:90%;
-		background-color: lightblue;
-		border-style:solid;
-		opacity:1;
-		border-style:solid;
-	}
 	
 
 
@@ -347,7 +332,7 @@
 			</div>
 
 			<div class="contenedorPorTercio" >
-				<img id="idPrendeTangoSali" src="./imagenes/TangoDrawing.jpeg" class="accion" />
+				<img id="idPrendeTangoSali" src="./imagenes/TangoDrawing.jpeg"  />
 			</div>
 
 
@@ -402,13 +387,8 @@
 <!--ventana modal -->
 
 <div id="ventanaModal" class="ventanaModalApagada">   <!--ventana modal 1-->
-	<div id="encabezadoModal" class="encabezadoModal">
-		
-		<span style="font-size:3em">Video</span>
-		<div id="btCruz" class="btCruz">X</div>
-		
-	</div>
-	<div  class="contenidoModal">
+<div id="btCruz" class="btCruz">X</div>
+	<!--<div style="background-color: lightblue;width:300px;height:400px">contenidoModal</div>-->
 		<video id="idVideo" style="height: 100%;width: 100%;"  src=""></video>
 	</div>
 
