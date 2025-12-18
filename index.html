@@ -549,7 +549,7 @@ let lenguaje = window.navigator.languages; //Es un array
 //<h2> Asignacion de textos condicional al idioma del navegador
 
 
-if (lenguaje[0]=="es-ES") {
+if (lenguaje[0].substring(0,2)=="es") {
 	//alert("español");
 	document.getElementById("bailarEnSerio").innerHTML = es_bailarEnSerio;
 	document.getElementById("textoDominarCuerpo").innerHTML = es_dominarCuerpo;
@@ -561,7 +561,7 @@ if (lenguaje[0]=="es-ES") {
 	document.getElementById("textoSali").innerHTML = es_sali;
 	document.getElementById("textoAprenderTango").innerHTML = es_aprenderTango;
 }
-else if (lenguaje[0]=="en") {
+else if (lenguaje[0].substring(0,2)=="en") {
 	//alert("ingles");
 	document.getElementById("bailarEnSerio").innerHTML = en_bailarEnSerio;
 	document.getElementById("textoDominarCuerpo").innerHTML = en_dominarCuerpo;
